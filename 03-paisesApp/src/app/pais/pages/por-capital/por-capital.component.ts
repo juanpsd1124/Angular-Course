@@ -12,7 +12,7 @@ export class PorCapitalComponent {
   termino: string = '';
   hayError: boolean = false;
   paises : Country[] = [];
-
+  
   constructor( private paisService: PaisService ){}
 
   buscar( termino: string){

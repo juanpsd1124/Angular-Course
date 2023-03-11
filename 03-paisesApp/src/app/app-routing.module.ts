@@ -22,7 +22,7 @@ const routes: Routes = [
     },
     {
         path: 'pais/:id',
-        component: PorPaisComponent,
+        component: VerPaisComponent,
     },
     {
         path: '**',
