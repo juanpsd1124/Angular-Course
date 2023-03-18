@@ -26,17 +26,19 @@ export class SelectorPageComponent {
   ngOnInit(): void{
     
     this.regiones = this.paisesService.regiones;
-    //Cuando cambie la region
-    this.miFormulario.get('region')?.valueChanges
-      .subscribe( region => {
-        console.log(region);
 
-        this.paisesService.getPaisesPorRegion( region )
-          .subscribe( paises => {
-            console.log(paises)
-              this.paises = paises;
-          })
-      })
+    
+    // //Cuando cambie la region
+    // this.miFormulario.get('region')?.valueChanges
+    //   .subscribe( region => {
+    //     console.log(region);
+
+    //     this.paisesService.getPaisesPorRegion( region )
+    //       .subscribe( paises => {
+    //         console.log(paises)
+    //           this.paises = paises;
+    //       })
+    //   })
   }
 
   guardar(){
